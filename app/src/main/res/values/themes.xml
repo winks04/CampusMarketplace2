@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CampusMarketplace" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/beige</item>
+         <item name="colorPrimaryVariant">@color/beige</item>
+         <item name="android:statusBarColor">@color/beige</item>
+    </style>
+
+    <style name="Theme.CampusMarketplace" parent="Base.Theme.CampusMarketplace" />
+</resources>

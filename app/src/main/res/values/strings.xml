@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CampusMarketplace</string>
+    <string name="homepage">Homepage</string>
+    <string name="my_shelf">Putting on the Shelf</string>
+    <string name="my_account">My Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
