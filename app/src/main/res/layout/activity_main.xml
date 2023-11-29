@@ -11,6 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/search_bar"
+            android:title="SearchBar"
+            android:icon="@drawable/baseline_search_24"/>
+
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -23,31 +30,41 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/fragment_contianer"/>
+            android:id="@+id/fragment_contianer">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <com.google.android.material.bottomappbar.BottomAppBar
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bottomAppBar"
-                android:layout_gravity="bottom"
-                android:backgroundTint="@color/beige">
+                android:layout_height="match_parent">
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:layout_width="wrap_content"
+
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/bottom_navigation"
-                    app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_menu"
-                    android:background="@android:color/transparent"/>
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="@color/beige">
 
-            </com.google.android.material.bottomappbar.BottomAppBar>
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottom_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:labelVisibilityMode="labeled"
+                        app:menu="@menu/bottom_menu" />
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                </com.google.android.material.bottomappbar.BottomAppBar>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:backgroundTint="@color/beige">
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </FrameLayout>
 
     </RelativeLayout>
 
